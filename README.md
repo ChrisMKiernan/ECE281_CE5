@@ -11,7 +11,7 @@ The program we are trying to create will add two numbers together, 44 and -37. T
 - add $s2, $s1, $s0
 - sw $s2, 54($0)
 
-Where $s2 will hold the value of the 2 numbers we add together from $s1 and $s0
+Where $s2 will hold the value of the 2 numbers we add together from $s1 and $s0.
 
 ### Machine Code
 
@@ -22,7 +22,7 @@ To create the machine code, I took each part of the assembly and parsed them acc
 - 0x02119020
 - 0xAC120054
 
-## Waveform
+### Waveform
 
 ![alt text](https://raw.githubusercontent.com/ChrisMKiernan/ECE281_CE5/master/MIPS_Waveform_Pic.PNG "The waveform of the machine code made in Part 2")
 
