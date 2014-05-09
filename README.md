@@ -21,3 +21,9 @@ To create the machine code, I took each part of the assembly and parsed them acc
 - 0x2011FFDB
 - 0x02119020
 - 0xAC120054
+
+## Waveform
+
+![alt text](https://raw.githubusercontent.com/ChrisMKiernan/ECE281_CE5/master/MIPS_Waveform_Pic.PNG "The waveform of the machine code made in Part 2")
+
+Above is the waveform created by the instructions implemented into the MIPS program. We can see all of our instructions executed perfectly, and can deduce the output of the program. We know the program works because the output of the ALU in the third nonzero ALU block is 7, then the write data block becomes 7 in the next clock cycle (44 - 37 = 7). We can also see the memwrite signal go to 1 in the last clock cycle, meaning we will be writing to memort the data in the write data block. We can also see the WE3 signal go to 0 in this cycle, this is becasue we won't be writing to a register, but will instead be reading the register $s2 and writing that value to memory 0x54.
